@@ -1,0 +1,19 @@
+<phpunit bootstrap="./vendor/autoload.php"
+         convertErrorsToExceptions="true"
+         convertNoticesToExceptions="true"
+         convertWarningsToExceptions="true"
+         stopOnFailure="false"
+         verbose="true"
+         colors="false">
+
+    <php>
+        <ini name="error_reporting" value="-1" />
+    </php>
+
+    <testsuites>
+        <testsuite name="Ydin Test Suite">
+            <directory>./test/</directory>
+        </testsuite>
+    </testsuites>
+
+</phpunit>

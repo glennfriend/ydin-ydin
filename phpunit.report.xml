@@ -1,0 +1,37 @@
+<phpunit bootstrap="./vendor/autoload.php"
+         convertErrorsToExceptions="true"
+         convertNoticesToExceptions="true"
+         convertWarningsToExceptions="true"
+         stopOnFailure="false"
+         verbose="true"
+         colors="true">
+
+    <php>
+        <ini name="error_reporting" value="-1" />
+    </php>
+
+    <testsuites>
+        <testsuite name="Ydin Test Suite">
+            <directory>./test/</directory>
+        </testsuite>
+    </testsuites>
+
+    <!-- about report & coverage -->
+    <logging>
+        <log type="coverage-text"
+             target="php://stdout"
+             showUncoveredFiles="false"
+        />
+        <log type="coverage-html"
+             target="_build/coverage"
+             lowUpperBound="50"
+             highLowerBound="80"
+        />
+    </logging>
+    <filter>
+        <whitelist>
+            <directory suffix=".php">./src/</directory>
+        </whitelist>
+    </filter>
+
+</phpunit>
