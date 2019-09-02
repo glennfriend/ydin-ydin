@@ -1,11 +1,14 @@
+## ydin
 
 ### Install
-composer config "repositories.ydin" path "packages/Cor/Ydin"
-composer require "cor/ydin:dev-master"
+```
+composer config "repositories.ydin" path "packages/Ydin/Ydin"
+composer require "ydin/ydin:dev-master"
+```
 
 ### Unit Test
 ```
-./vendor/bin/phpunit --testdox
+clear && ./vendor/bin/phpunit --testdox
 ```
 
 ### report

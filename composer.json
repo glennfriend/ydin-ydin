@@ -1,5 +1,5 @@
 {
-    "name": "cor/ydin",
+    "name": "ydin/ydin",
     "require" : {
         "php": ">=7.1"
     },
