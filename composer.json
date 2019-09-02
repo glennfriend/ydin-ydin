@@ -1,8 +1,9 @@
 {
-    "name": "cor/ydin",
+    "name": "ydin/ydin",
     "require" : {
         "php": ">=7.1"
     },
+    "license": "MIT",
     "require-dev": {
         "phpunit/phpunit": "8.*"
     },
