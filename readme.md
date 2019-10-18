@@ -22,3 +22,5 @@ clear && ./vendor/bin/phpunit --testdox
 firefox _build/coverage/index.html
 ```
 
+### 分類方式
+- 預計參考 https://github.com/symfony/symfony/tree/4.4/src/Symfony/Component
