@@ -5,7 +5,7 @@ use Cor\Ydin;
 
 class Collection_CollectionTest extends TestCase
 {
-    public function setUp()
+    public function setUp(): void
     {
         $this->items = [
             [

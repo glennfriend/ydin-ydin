@@ -1,9 +1,8 @@
 <?php
 
 use PHPUnit\Framework\TestCase;
-use Cor\Ydin;
 
-final class ArrayKit_DotTest extends TestCase
+final class DotTest extends TestCase
 {
     protected $items = [
         'name'      => 'ken',
@@ -19,8 +18,9 @@ final class ArrayKit_DotTest extends TestCase
 
     /**
      *  測試資料的取得
+     * @test
      */
-    public function test_factory()
+    public function factory()
     {
         $dot = Ydin\ArrayKit\Dot::factory($this->items);
 
