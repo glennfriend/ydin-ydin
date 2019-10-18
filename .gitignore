@@ -2,3 +2,4 @@
 /_build
 /node_modules
 /vendor
+.phpunit.result.cache
