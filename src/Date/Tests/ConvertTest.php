@@ -1,14 +1,14 @@
 <?php
 
 use PHPUnit\Framework\TestCase;
-use Cor\Ydin;
 
 class Date_ConvertTest extends TestCase
 {
     /**
-     *  
+     * @test
+     * @group date
      */
-    public function test_convert_timezone()
+    public function convert_timezone()
     {
         date_default_timezone_set('UTC');
 

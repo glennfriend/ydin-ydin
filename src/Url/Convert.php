@@ -1,11 +1,12 @@
 <?php
-namespace Cor\Ydin\Url;
+declare(strict_types=1);
+namespace Ydin\Url;
 
 /**
  * Url Convert
  *
  * @version 1.0.0
- * @package Cor\Ydin\Url\Convert
+ * @package Ydin\Url\Convert
  */
 class Convert
 {

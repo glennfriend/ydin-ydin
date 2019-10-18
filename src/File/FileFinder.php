@@ -1,11 +1,11 @@
 <?php
-declare(strict_types = 1);
-namespace Modules\Experiment\Components;
+declare(strict_types=1);
+namespace Ydin\File;
 
 /**
  * Class FileFinder
  *
- * @package Modules\Experiment\Components
+ * @package Ydin\File
  */
 class FileFinder
 {

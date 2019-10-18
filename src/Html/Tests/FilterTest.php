@@ -1,7 +1,6 @@
 <?php
 
 use PHPUnit\Framework\TestCase;
-use Cor\Ydin;
 
 class Html_FilterTest extends TestCase
 {

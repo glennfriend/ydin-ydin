@@ -1,23 +1,24 @@
 <?php
 
 use PHPUnit\Framework\TestCase;
-use Cor\Ydin;
 
 class File_MimeTest extends TestCase
 {
     /**
-     *  
+     * @test
+     * @group file
      */
-    public function test_getByFile()
+    public function getByFile()
     {
         $fileMime = Ydin\File\Mime::getByFile(__FILE__);
         $this->assertEquals(true, 'text/x-php' === $fileMime);
     }
 
     /**
-     *  
+     * @test
+     * @group file
      */
-    public function test_getExtendGroup()
+    public function getExtendGroup()
     {
         $extendGroup = Ydin\File\Mime::getExtendGroup();
         $this->assertEquals( true, isset($extendGroup['csv']));
@@ -27,9 +28,10 @@ class File_MimeTest extends TestCase
     }
 
     /**
-     *  
+     * @test
+     * @group file
      */
-    public function test_getByExtendName()
+    public function getByExtendName()
     {
         $mimeList = Ydin\File\Mime::getByExtendName('csv');
         $this->assertEquals(

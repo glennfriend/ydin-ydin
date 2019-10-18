@@ -1,14 +1,13 @@
 <?php
 
 use PHPUnit\Framework\TestCase;
-use Cor\Ydin;
 
 class Net_IpTest extends TestCase
 {
     /**
-     *  
+     * @test
      */
-    public function test_isPrivate()
+    public function isPrivate()
     {
         $this->assertEquals( true, Ydin\Net\Ip::isPrivate('127.0.0.1')   );
         $this->assertEquals( true, Ydin\Net\Ip::isPrivate('10.0.0.0')    );
@@ -17,16 +16,17 @@ class Net_IpTest extends TestCase
         
         $this->assertEquals( false, Ydin\Net\Ip::isPrivate('8.8.8.8')   );
         $this->assertEquals( false, Ydin\Net\Ip::isPrivate('')          );
-        $this->assertEquals( false, Ydin\Net\Ip::isPrivate(null)        );
-        $this->assertEquals( false, Ydin\Net\Ip::isPrivate(false)       );
+        $this->assertEquals( false, Ydin\Net\Ip::isPrivate( (string) null)  );
+        $this->assertEquals( false, Ydin\Net\Ip::isPrivate( (string)false)  );
     }
 
     /**
-     *  @dataProvider check_ip2ong
+     * @test
+     * @dataProvider check_ip2ong
      */
-    public function test_ip2ong($value, $reault)
+    public function ip2ong($value, $reault)
     {
-        $this->assertEquals( Ydin\Net\Ip::ip2long($value), $reault);
+        $this->assertEquals( Ydin\Net\Ip::ip2long((string) $value), $reault);
     }
     /**
      *

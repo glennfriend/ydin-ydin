@@ -17,10 +17,11 @@ final class DotTest extends TestCase
     ];
 
     /**
-     *  測試資料的取得
+     * @testdox Get dot by array
      * @test
+     * @group array-kit
      */
-    public function factory()
+    public function factory_dot()
     {
         $dot = Ydin\ArrayKit\Dot::factory($this->items);
 

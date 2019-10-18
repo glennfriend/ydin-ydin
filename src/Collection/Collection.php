@@ -1,5 +1,8 @@
 <?php
-namespace Cor\Ydin\Collection;
+declare(strict_types=1);
+namespace Ydin\Collection;
+
+use Exception;
 
 /**
  * 將陣列資料打包為 Collection Object
@@ -10,7 +13,7 @@ namespace Cor\Ydin\Collection;
  *     - find
  *
  * @version 1.0.0
- * @package Cor\Ydin\Collection
+ * @package Ydin\Collection
  */
 class Collection
 {
@@ -95,7 +98,7 @@ class Collection
         $field = trim($tmp[0]);
 
         if (!isset($tmp[1])) {
-            throw new \Exception('Error: Ydin\Collection\Collection condition have problem!');
+            throw new Exception('Error: Ydin\Collection\Collection condition have problem!');
         }
         $condition  = trim(strtolower($tmp[1]));
 
@@ -103,16 +106,16 @@ class Collection
         $value = trim(join(' ', $tmp));
 
         if (!$field) {
-            throw new \Exception('Error: Ydin\Collection\Collection "field" not found!');
+            throw new Exception('Error: Ydin\Collection\Collection "field" not found!');
         }
         if (!$condition) {
-            throw new \Exception('Error: Ydin\Collection\Collection "condition" not found!');
+            throw new Exception('Error: Ydin\Collection\Collection "condition" not found!');
         }
         if (!$value) {
-            throw new \Exception('Error: Ydin\Collection\Collection "condition value" not found!');
+            throw new Exception('Error: Ydin\Collection\Collection "condition value" not found!');
         }
 
-        $helpOration = trim($helpOration);
+        $helpOration = trim((string) $helpOration);
         return [$field, $condition, $value, $helpOration];
     }
 

@@ -12,7 +12,7 @@
 
     <testsuites>
         <testsuite name="Ydin Test Suite">
-            <directory>./test/</directory>
+            <directory>./src/*/Tests/</directory>
         </testsuite>
     </testsuites>
 

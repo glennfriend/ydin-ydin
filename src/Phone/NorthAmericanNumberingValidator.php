@@ -1,6 +1,6 @@
 <?php
-
-namespace Cor\Ydin\Phone;
+declare(strict_types=1);
+namespace Ydin\Phone;
 
 /**
  * 北美電話編號計劃 validate
@@ -8,7 +8,7 @@ namespace Cor\Ydin\Phone;
  *      - https://en.wikipedia.org/wiki/List_of_North_American_Numbering_Plan_area_codes
  *
  * @version 0.1.0
- * @package Cor\Ydin\Phone\NorthAmericanNumberingValidator
+ * @package Ydin\Phone\NorthAmericanNumberingValidator
  */
 class NorthAmericanNumberingValidator
 {

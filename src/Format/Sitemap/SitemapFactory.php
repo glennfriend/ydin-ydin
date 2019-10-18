@@ -1,6 +1,6 @@
 <?php
-
-namespace Cor\SitemapNow\Library\Format;
+declare(strict_types=1);
+namespace Ydin\Format\Sitemap;
 
 
 class SitemapFactory

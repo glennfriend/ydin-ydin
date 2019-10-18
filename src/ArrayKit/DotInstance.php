@@ -1,6 +1,6 @@
 <?php
-
-namespace Cor\Ydin\ArrayKit;
+declare(strict_types=1);
+namespace Ydin\ArrayKit;
 
 /**
  * 使用 . 符號的方式, 將陣列由字串的方式來 取得
@@ -22,7 +22,7 @@ namespace Cor\Ydin\ArrayKit;
  *      $dotInstance->get('user.friend.0.name', null);
  *
  * @version 1.0.0
- * @package Cor\Ydin\ArrayKit
+ * @package Ydin\ArrayKit
  *
  */
 class DotInstance

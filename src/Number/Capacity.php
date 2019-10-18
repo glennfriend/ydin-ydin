@@ -3,13 +3,13 @@
 // 未進行 正確標準 測試
 exit;
 
-namespace Cor\Ydin\Number;
+namespace Ydin\Number;
 
 /**
  * 容量
  *
  * @version 0.1.0
- * @package Cor\Ydin\Number\Capacity
+ * @package Ydin\Number\Capacity
  */
 class Capacity
 {

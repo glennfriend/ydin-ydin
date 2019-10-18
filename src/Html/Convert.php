@@ -1,11 +1,12 @@
 <?php
-namespace Cor\Ydin\Html;
+declare(strict_types=1);
+namespace Ydin\Html;
 
 /**
  * Html Convert
  *
- * @version     1.0.0
- * @package     Cor\Ydin\Html\Convert
+ * @version 1.0.0
+ * @package Ydin\Html\Convert
  */
 class Convert
 {

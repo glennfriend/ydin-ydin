@@ -1,11 +1,12 @@
 <?php
-namespace Cor\Ydin\Net;
+declare(strict_types=1);
+namespace Ydin\Net;
 
 /**
  * Ip
  *
  * @version 1.0.1
- * @package Cor\Ydin\Net
+ * @package Ydin\Net
  */
 class Ip
 {
@@ -20,7 +21,7 @@ class Ip
      *
      *      @see http://www.faqs.org/rfcs/rfc1918.html
      */
-    public static function isPrivate( $ip )
+    public static function isPrivate(string $ip)
     {
         $privateList = array(
             '/^0./',
@@ -48,7 +49,7 @@ class Ip
      *  @see http://php.net/manual/en/function.ip2long.php
      *  @return IPv4 address or "0"
      */
-    public static function ip2long($ipString)
+    public static function ip2long(string $ipString)
     {
         return sprintf("%u", ip2long($ipString));
     }

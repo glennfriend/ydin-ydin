@@ -1,15 +1,16 @@
 <?php
 
 use PHPUnit\Framework\TestCase;
-use Cor\Ydin\Phone\NorthAmericanNumberingValidator;
+use Ydin\Phone\NorthAmericanNumberingValidator;
 
 class Phone_NorthAmericanNumberingValidator_Test extends TestCase
 {
 
     /**
-     *  @dataProvider check_usa_phone_number
+     * @dataProvider check_usa_phone_number
+     * @test
      */
-    public function test_usa_phone_number($result, $number)
+    public function usa_phone_number($result, $number)
     {
         $this->assertEquals($result, NorthAmericanNumberingValidator::isValid($number));
     }

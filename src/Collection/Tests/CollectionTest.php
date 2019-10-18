@@ -1,7 +1,6 @@
 <?php
 
 use PHPUnit\Framework\TestCase;
-use Cor\Ydin;
 
 class Collection_CollectionTest extends TestCase
 {
@@ -109,7 +108,6 @@ class Collection_CollectionTest extends TestCase
     public function test_find()
     {
         $collection = $this->getCollection();
-        // print_r($collection);
 
         $this->assertEquals( true, 2 === count($collection->find('name % v')) );
     }

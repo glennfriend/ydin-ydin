@@ -1,11 +1,12 @@
 <?php
-namespace Cor\Ydin\File;
+declare(strict_types=1);
+namespace Ydin\File;
 
 /**
  * File Mime
  *
- * @version     1.0.0
- * @package     Cor\Ydin\File\Mime
+ * @version 1.0.0
+ * @package Ydin\File\Mime
  */
 class Mime
 {

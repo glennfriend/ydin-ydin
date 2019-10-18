@@ -1,11 +1,11 @@
 <?php
-namespace Cor\Ydin\Date;
+namespace Ydin\Date;
 
 /**
  * Day
  *
  * @version 1.0.0
- * @package Cor\Ydin\Date\Day
+ * @package Ydin\Date\Day
  * @uses
  */
 class Day

@@ -3,13 +3,13 @@
 // 未測試
 exit;
 
-namespace Cor\Ydin\File;
+namespace Ydin\File;
 
 /**
  * 取得 url 的資料
  *
  * @version 0.1.0
- * @package Cor\Ydin\File
+ * @package Ydin\File
  */
 class Url
 {

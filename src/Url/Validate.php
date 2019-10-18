@@ -1,11 +1,12 @@
 <?php
-namespace Cor\Ydin\Url;
+declare(strict_types=1);
+namespace Ydin\Url;
 
 /**
  * Url Vlidate
  *
  * @version 0.1.0
- * @package Cor\Ydin\Url\Validate
+ * @package Ydin\Url\Validate
  */
 class Validate
 {

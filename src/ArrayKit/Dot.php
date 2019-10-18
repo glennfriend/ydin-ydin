@@ -1,11 +1,12 @@
 <?php
-namespace Cor\Ydin\ArrayKit;
+declare(strict_types=1);
+namespace Ydin\ArrayKit;
 
 /**
  * DataConverge
  *
- * @version     1.0.0
- * @package     Cor\Ydin\ArrayKit
+ * @version 1.0.0
+ * @package Ydin\ArrayKit
  */
 class Dot
 {
@@ -16,11 +17,11 @@ class Dot
      *      - $dot('user.email')
      *      - $dot('user.friend.0.name')
      *
-     * @see Cor\Ydin\ArrayKit\DotInstance
+     * @see Ydin\ArrayKit\DotInstance
      * @param  array
      * @return wrap closure object
      */
-    static public function factory(Array $items)
+    public static function factory(Array $items)
     {
         $wrap = function($keyword, $defaultValue=null) use ($items)
         {

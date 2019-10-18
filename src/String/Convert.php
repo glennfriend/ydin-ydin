@@ -1,11 +1,12 @@
 <?php
-namespace Cor\Ydin\String;
+declare(strict_types=1);
+namespace Ydin\String;
 
 /**
  * String
  *
  * @version 1.0.0
- * @package Cor\Ydin\String\Convert
+ * @package Ydin\String\Convert
  */
 class Convert
 {

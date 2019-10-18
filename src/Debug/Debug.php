@@ -1,11 +1,12 @@
 <?php
-namespace Cor\Ydin;
+declare(strict_types=1);
+namespace Ydin\Debug;
 
 /**
  * Debug library
  *
  * @version 0.1.0
- * @package Cor\Ydin\Debug
+ * @package Ydin\Debug
  */
 class Debug
 {

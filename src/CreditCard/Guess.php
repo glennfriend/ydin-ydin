@@ -1,5 +1,6 @@
 <?php
-namespace Cor\Ydin\CreditCard;
+declare(strict_types=1);
+namespace Ydin\CreditCard;
 
 /**
  * 本程式僅用於猜測卡號
@@ -14,7 +15,7 @@ namespace Cor\Ydin\CreditCard;
  *      - 新增 laser
  *
  * @version 1.0.0
- * @package Cor\Ydin\CreditCard
+ * @package Ydin\CreditCard
  */
 class Guess
 {

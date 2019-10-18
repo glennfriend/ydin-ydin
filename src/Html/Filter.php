@@ -1,11 +1,12 @@
 <?php
-namespace Cor\Ydin\Html;
+declare(strict_types=1);
+namespace Ydin\Html;
 
 /**
  * Html Filter
  *
  * @version 0.1.0
- * @package Cor\Ydin\Html\Filter
+ * @package Ydin\Html\Filter
  */
 class Filter
 {

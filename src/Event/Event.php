@@ -1,5 +1,6 @@
 <?php
-namespace Cor\Ydin;
+declare(strict_types=1);
+namespace Ydin\Event;
 
 /**
  * Event
@@ -12,7 +13,7 @@ namespace Cor\Ydin;
  *      is static class
  *
  * @version    1.0.1
- * @package    Cor\Ydin\Event
+ * @package    Ydin\Event
  *
  * @history    1.0.0
  * @history    1.0.1 - fix notify(), from include() to include_once()

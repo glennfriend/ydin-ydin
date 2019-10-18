@@ -1,11 +1,16 @@
 <?php
-namespace Cor\Ydin\Date;
+declare(strict_types=1);
+namespace Ydin\Date;
+
+use Exception;
+use DateTime;
+use DateTimeZone;
 
 /**
  * Convert
  *
  * @version 1.0.0
- * @package Cor\Ydin\Date\Convert
+ * @package Ydin\Date\Convert
  */
 class Convert
 {
@@ -25,19 +30,20 @@ class Convert
      *  @string $timeString - timestamp int
      *  @string $from       - timezone string
      *  @string $to         - timezone string
-     *  @return timestamp|0
+     *  @return int
      */
     public static function timezone($timestamp, $from, $to)
     {
         try {
-            $tz1 = new \DateTime(null, new \DateTimeZone($from));
-            $tz2 = new \DateTime(null, new \DateTimeZone($to));
+            $tz1 = new DateTime('now', new DateTimeZone($from));
+            $tz2 = new DateTime('now', new DateTimeZone($to));
             $offset = $tz2->getOffset() - $tz1->getOffset();
             return $timestamp + $offset;
         }
         catch (Exception $e) {
             // error
         }
+
         return 0;
     }
 }

@@ -1,12 +1,14 @@
 <?php
+
 use PHPUnit\Framework\TestCase;
 
 final class JsonParseTest extends TestCase
 {
     /**
-     *
+     * @test
+     * @group json
      */
-    public function test_json_parse()
+    public function json_parse()
     {
         $text = <<<EOD
 {
