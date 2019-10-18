@@ -21,5 +21,14 @@
         "sort-packages": true
     },
     "prefer-stable": true,
-    "minimum-stability": "dev"
+    "minimum-stability": "dev",
+    "scripts": {
+        "test": [
+            "phpunit --colors=always --testdox"
+        ],
+        "test-report": [
+            "phpunit --coverage-html ./report"
+        ]
+    }
+
 }
