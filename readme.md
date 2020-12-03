@@ -1,14 +1,9 @@
 ## ydin
 
-### Install from composer
+### Install from local composer package
 ```
-composer require "ydin/ydin:0.1.0"
-```
-
-### Install from myself
-```
-composer config "repositories.ydin" path "packages/Ydin/Ydin"
-composer require "ydin/ydin:dev-master"
+composer config "repositories.ydin" path "packages/ydin-ydin"
+php -d memory_limit=-1  /usr/local/bin/composer require "ydin/ydin:dev-master"
 ```
 
 ### Unit Test
