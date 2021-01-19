@@ -69,4 +69,15 @@ EOD;
         $res = 'https://example.com/?data=()_[]_{}';
         $this->assertEquals($res, UrlMake::convertBrackets($url));
     }
+
+    /**
+     * @test
+     */
+    public function url_convert_space()
+    {
+        $url = 'https://example.com/?data=aa%20bb';
+        $res = 'https://example.com/?data=aa+bb';
+        $this->assertEquals($res, UrlMake::build(UrlMake::parse($url)));
+    }
+
 }

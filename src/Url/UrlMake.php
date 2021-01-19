@@ -39,6 +39,10 @@ class UrlMake
     }
 
     /**
+     * tips
+     *      RFC 1738 space use +
+     *      RFC 3986 space use %20
+     *
      * @param array $urlInfo
      * @return string|null
      */
@@ -46,7 +50,7 @@ class UrlMake
     {
         $url = "{$urlInfo['scheme']}://{$urlInfo['host']}{$urlInfo['path']}";
         if ($urlInfo['queryInfo']) {
-            $url .= '?' . http_build_query($urlInfo['queryInfo'], '', '&', PHP_QUERY_RFC3986);
+            $url .= '?' . http_build_query($urlInfo['queryInfo'], '', '&', PHP_QUERY_RFC1738);
         }
 
         return $url;
