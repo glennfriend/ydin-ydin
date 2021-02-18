@@ -1,0 +1,6 @@
+zip,lat,lng,city,state_id,state_name,bool,population,population,population
+77449,29.83556,-95.73813,Katy,TX,Texas,TRUE,128294,0%,top1
+77494,29.7433,-95.82862,Katy,TX,Texas,TRUE,118291,0%,top2
+11368,40.74959,-73.8526,Corona,NY,New York,TRUE,112088,0%,top3
+79936,31.77618,-106.29786,El Paso,TX,Texas,TRUE,111620,0%,top4
+90011,34.00714,-118.25874,Los Angeles,CA,California,TRUE,111165,0%,top5
