@@ -6,6 +6,18 @@ use Ydin\Url\UrlMake;
 
 final class UrlMakeTest extends TestCase
 {
+
+    /**
+     * @test
+     */
+    public function url_reorganize()
+    {
+        $url = 'https://example.com/1/Hi - Ext.jpg?&data=100&&age=20&';
+        $res = 'https://example.com/1/Hi - Ext.jpg?data=100&age=20';
+
+        $this->assertEquals(UrlMake::reorganize($url), $res);
+    }
+
     /**
      * @test
      */

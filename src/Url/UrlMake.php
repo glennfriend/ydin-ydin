@@ -13,6 +13,15 @@ class UrlMake
 {
     /**
      * @param string $url
+     * @return string
+     */
+    public static function reorganize(string $url): string
+    {
+        return UrlMake::build(UrlMake::parse(($url)));
+    }
+
+    /**
+     * @param string $url
      * @return array|null
      */
     public static function parse(string $url): ?array
