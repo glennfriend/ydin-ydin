@@ -3,6 +3,10 @@ declare(strict_types=1);
 
 namespace Ydin\Encode;
 
+
+// TODO: 建議改成 0123456789 <--> zersfwlcbk
+
+
 /**
  * 單一字符的簡易轉換
  * 如果不在這個指定範圍, 則不轉換
