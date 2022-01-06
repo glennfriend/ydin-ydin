@@ -36,7 +36,7 @@ class Convert
     private static function normalNameCase($value): string
     {
         // $value = str_replace('&', '_and_', $value);
-        $value = preg_replace("/[@#&|\-\ ]/", "_", $value);
+        $value = preg_replace("/[@#&|\/\-\ ]/", "_", $value);
 
         // security convert
         $value = preg_replace("/[^a-zA-Z0-9_]+/", "", $value);
