@@ -1,0 +1,19 @@
+## example
+
+    docker-compose exec 'php7' php artisan prefix:command-name  \
+        account='747-217-7784'  \
+        id='13976027486'        \
+        items='[17,31]'         \
+        name='City'             \
+        boolData='true'         \
+        nullData='null'
+
+## 目的
+
+    將資料視為 controller POST 的資料進入
+    當輸入來源有 console 與 controller 的時候
+    讓行為盡量一致
+    可以避免 POST 不應該有的情況發生:
+
+        $signature = 'prefix:command-name {--account=} {--myId=} many data ...'
+

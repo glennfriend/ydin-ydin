@@ -1,0 +1,12 @@
+## example
+
+    docker-compose exec 'php7' php artisan prefix:command-name  \
+        --account='747-217-7784'                      \
+        --id='13976027486'                            \
+        --items='[17,31]'                             \
+        --name='City'                                 \
+        --boolData='true'                             \
+        --nullData='null'                             \
+        --options\['expandFrom'\]='111'               \
+        --options\['changeFrom'\]='222'               \
+        --options\['useLocalPhoneNumbers'\]='true'
